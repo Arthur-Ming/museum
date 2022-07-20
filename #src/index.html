@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('templates/head.html',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('templates/header.html',{})
+		<main class="page">
+			@@include('templates/welcome.html',{})
+			@@include('templates/visiting.html',{})
+			@@include('templates/explore.html',{})
+			@@include('templates/video.html',{})
+			@@include('templates/gallery.html',{})
+			@@include('templates/tickets.html',{})
+			@@include('templates/parallax.html',{})
+			@@include('templates/contacts.html',{})
+			@@include('templates/booking.html',{})
+			@@include('templates/button-up.html',{})
+		</main>
+		@@include('templates/footer.html',{})
+	</div>
+
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+	@@include('templates/js.html',{})
+</body>
+
+</html>

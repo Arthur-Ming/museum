@@ -1,0 +1,227 @@
+<section class="booking">
+    <div class="booking__box">
+        <div class="booking__close">
+            <svg viewBox="0 0 27 27">
+                <use xlink:href='img/sprite.svg#modal-close' />
+            </svg>
+        </div>
+        <div class="booking__columns">
+            <form class="form">
+                <div class="booking__column">
+                    <div class="booking__logo">
+                        <svg viewBox="0 0 49 26">
+                            <use xlink:href='img/sprite.svg#logo' />
+                        </svg>
+                    </div>
+                    <h2 class="booking__title">Booking tickets</h2>
+                    <h3 class="booking__subtitle">Tour to Louvre</h3>
+                    <div class="booking__date">
+                        <div class="input  input-date input__fake booking__input">
+                            <input class="input__control" type="date" id="b-date" min="" max="2022-01-01"
+                                onchange="this.className=(this.value!=''?'has-value input__control':'')">
+                            <div class="input__state">
+                                <svg class="input__icon input__icon_input-date" viewBox="0 0 15 15">
+                                    <use xlink:href='img/sprite.svg#input-date' />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="input input-date input__fake booking__input">
+                            <input class="input__control" id='b-time' type="time" list="times"
+                                onchange="this.className=(this.value!=''?'has-value input__control':'')">
+                            <datalist id="times">
+                                <option value="09:00">
+                                <option value="09:30">
+                                <option value="10:00">
+                                <option value="10:30">
+                                <option value="11:00">
+                                <option value="11:30">
+                                <option value="12:00">
+                                <option value="12:30">
+                                <option value="13:00">
+                                <option value="13:30">
+                                <option value="14:00">
+                                <option value="14:30">
+                                <option value="15:00">
+                                <option value="15:30">
+                                <option value="16:00">
+                                <option value="16:30">
+                                <option value="17:00">
+                                <option value="17:30">
+                                <option value="18:00">
+                            </datalist>
+                            <div class="input__state">
+                                <svg class="input__icon input__icon_input-date" viewBox="0 0 15 15">
+                                    <use xlink:href='img/sprite.svg#input-time' />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input input__fake booking__input">
+                        <input class="input__control" id="user-name" type="text" placeholder="Name">
+                        <div class="username-error-text">*invalid value</div>
+                        <div class="input__state">
+                            <svg class="input__icon input__icon_man" viewBox="0 0 13 15">
+                                <use xlink:href='img/sprite.svg#man' />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="input input__fake booking__input">
+                        <input class="input__control" id="email" type="email" placeholder="E-mail">
+                        <div class="email-error-text">*invalid value</div>
+                        <div class="input__state">
+                            <svg class="input__icon input__icon_email" viewBox="0 0 15 11">
+                                <use xlink:href='img/sprite.svg#input-email' />
+                            </svg>
+                        </div>
+
+                    </div>
+
+
+                    <div class="input  input__fake booking__input">
+                        <input class="input__control" id="tel" type="tel" placeholder="Phone">
+                        <div class="tel-error-text">*invalid value</div>
+                        <div class="input__state">
+                            <svg class="input__icon input__icon_phone" viewBox="0 0 14 23">
+                                <use xlink:href='img/sprite.svg#input-phone' />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="form__line booking__input">
+                        <select name="form[]" class="form" id="b-select">
+                            <option value="1">Permanent exhibition</option>
+                            <option value="2">Temporary exhibition</option>
+                            <option value="3">Combined Admission</option>
+                        </select>
+                    </div>
+                    <div class="entry-tickets">
+                        <div class="entry-tickets__title">Entry ticket</div>
+                        <div class="booking__quantitis">
+                            <div class="booking__quantity">
+                                <p class="booking__quantity-price">Basic 18+ (<span class="basic-price">20</span> €)
+                                </p>
+                                <div class="quantity entry-tickets__quantity _basic">
+                                    <button class="quantity__button quantity__button_minus "></button>
+                                    <div class="quantity__input">
+                                        <input autocomplete="off" type="number" name="form[]" value="1">
+                                    </div>
+                                    <button class="quantity__button quantity__button_plus"></button>
+                                </div>
+                            </div>
+                            <div class="booking__quantity">
+                                <p class="booking__quantity-price">Senior 65+ (<span class="senior-price">10</span> €)
+                                </p>
+                                <div class="quantity entry-tickets__quantity _senior">
+                                    <button class="quantity__button quantity__button_minus"></button>
+                                    <div class="quantity__input">
+                                        <input autocomplete="off" type="number" name="form[]" value="1">
+                                    </div>
+                                    <button class="quantity__button quantity__button_plus"></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="booking__column booking__column_left">
+                    <div class="booking__overview-wrapper">
+                        <div class="booking__overview">
+                            <h4>Overview</h4>
+                            <h5>Tour to Louvre</h5>
+                            <ul class="booking__overview-list">
+                                <li><svg viewBox="0 0 15 15">
+                                        <use xlink:href='img/sprite.svg#overview-date' />
+                                    </svg>
+                                    <span id="overview-date">Friday, August 19</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 15 15">
+                                        <use xlink:href='img/sprite.svg#overview-time' />
+                                    </svg>
+                                    <span id="overview-time">16 : 30</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 15 15">
+                                        <use xlink:href='img/sprite.svg#overview-check' />
+                                    </svg>
+                                    <span id="ticket-type">Temporary exhibition</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="booking__overview-image">
+                            <img src="img/booking/booking__overview/01.png" alt="overview">
+                        </div>
+                    </div>
+                    <div class="booking__overview-tickets">
+                        <div class="booking__overview-ticket">
+                            <div class="booking__overview-quantity">
+                                <span id='_basic'>1</span>
+                            </div>
+                            <p class="booking__overview-basic">Basic (<span class="basic-price">20</span> €)</p>
+                            <p class="booking__overview-basic-pr"><span id="total-basic">20</span> €</p>
+                        </div>
+                        <div class="booking__overview-ticket">
+                            <div class="booking__overview-quantity">
+                                <span id='_senior'>1</span>
+                            </div>
+                            <p class="booking__overview-basic">Senior (<span class="senior-price">10</span> €)</p>
+                            <p class="booking__overview-basic-pr"><span id="total-senior">10</span> €</p>
+                        </div>
+                    </div>
+                    <div class="booking__total">
+                        <p>Total:</p>
+                        <p><span class="total-price">220</span>€</p>
+                    </div>
+                    <div class="booking__carts ">
+                        <div class="booking__cart master-cart">
+                            <label class="master-cart__input-number">
+                                <span>Card number</span>
+                                <input type="text">
+                            </label>
+                            <div class="master-cart__input-dates">
+                                <label class="master-cart__input-date master-cart__input-number">
+                                    <span>Expiration date</span>
+                                    <input type="number" value="03" step="1">
+                                </label>
+                                <label class="master-cart__input-date master-cart__input-number">
+                                    <span></span>
+                                    <input type="number" value="2024">
+                                </label>
+                            </div>
+                            <label class="master-cart__input-cardholder master-cart__input-number">
+                                <span>Cardholder name</span>
+                                <input type="text">
+                            </label>
+                            <div class="master-cart__logo1">
+                                <svg viewBox="0 0 55 16">
+                                    <use xlink:href='img/sprite.svg#visa1' />
+                                </svg>
+                            </div>
+                            <div class="master-cart__logo2">
+                                <svg viewBox="0 0 53 32">
+                                    <use xlink:href='img/sprite.svg#visa2' />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="booking__cart master-cart booking__cart_bc">
+
+                            <label class="master-cart__input-cv master-cart__input-number">
+                                <span>CVC/CVV</span>
+                                <input type="text">
+                                <span>The last <br>
+                                    3 or 4 digits
+                                    on back <br>
+                                    of the card</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="booking__submit" type="submit">
+                        <span>Book</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,185 @@
+.visiting {
+   &__content {
+      padding-top: 75px;
+      padding-bottom: 75px;
+      @media (max-width: 1024px) {
+         padding-top: 60px;
+         padding-bottom: 60px;
+      }
+      @media (max-width: 768px) {
+         padding-top: 40px;
+         padding-bottom: 80px;
+      }
+      @media (max-width: 420px) {
+         padding-bottom: 40px;
+      }
+   }
+
+   &__title {
+      color: #9d8665;
+      margin-bottom: 103px;
+      @media (max-width: 1520px) {
+         margin-bottom: 83px;
+      }
+      @media (max-width: 1023.98px) {
+         margin-bottom: 63px;
+      }
+   }
+
+   &__carts {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 75px;
+      @media (max-width: 1200px) {
+         justify-content: space-evenly;
+         row-gap: 60px;
+      }
+      @media (max-width: 1023.98px) {
+         row-gap: 40px;
+      }
+   }
+
+   &__cart {
+      display: block;
+
+      // margin-bottom: 75px;
+      //max-width: calc(1440 / 440 * 100%);
+      width: calc(440 / 1440 * 100%);
+
+      img {
+         width: 100%;
+         height: 100%;
+      }
+      // flex: 0 0 440px;
+      @media (max-width: 1520px) {
+         flex: 0 0 31%;
+      }
+      @media (max-width: 1200px) {
+         flex: 0 0 calc(330 / 984 * 100%);
+         // height: 215px;
+      }
+      @media (max-width: 1023.98px) {
+         flex: 0 0 calc(280px + 50 * ((100vw - 768px) / (1023.98 - 768)));
+      }
+      @media (max-width: 600px) {
+         flex: 0 0 80%;
+      }
+      @media (max-width: 420px) {
+         flex: 0 0 280px;
+      }
+   }
+}
+
+.cart {
+   &__img {
+      width: 100%;
+      height: calc(215px + 70 * ((100vw - 1024px) / (1920 - 1024)));
+      @media (max-width: 1023.98px) {
+         height: calc(180px + 35 * ((100vw - 768px) / (1023.98 - 768)));
+      }
+      @media (max-width: 600px) {
+         height: auto;
+      }
+      @media (max-width: 420px) {
+         height: 180px;
+      }
+      img {
+         width: 100%;
+      }
+   }
+   &:hover .cart__sign h3::after {
+      width: 100%;
+   }
+   &:hover .cart__sign h3 {
+      color: #9d8665;
+   }
+   &:hover .cart__sign h4 {
+      color: #9d8665;
+   }
+   &:hover .cart__sign h5 {
+      color: #9d8665;
+   }
+
+   &__sign {
+      margin-top: 25px;
+      h3 {
+         position: relative;
+         font-family: Forum;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 32px;
+         line-height: 35px;
+         letter-spacing: 5px;
+         text-transform: uppercase;
+         color: #000000;
+         transition: color 0.3s ease 0s;
+         white-space: nowrap;
+         @media (max-width: 1520px) {
+            font-size: 28px;
+            line-height: 31px;
+            letter-spacing: 3px;
+         }
+         @media (max-width: 1023.98px) {
+            font-size: 22px;
+            line-height: 24px;
+         }
+         @media (max-width: 420px) {
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 5px;
+         }
+         &::after {
+            content: "";
+            position: absolute;
+            width: calc(150px + 150 * ((100vw - 1024px) / (1920 - 1024)));
+            height: 2px;
+            left: 0;
+            bottom: -12px;
+            background-color: #710707;
+            transition: width 0.5s ease 0s;
+            @media (max-width: 1023.98px) {
+               width: 150px;
+            }
+         }
+      }
+      h4 {
+         white-space: nowrap;
+         margin-top: 22px;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: 200;
+         font-size: 22px;
+         line-height: 26px;
+         color: #000000;
+         transition: color 0.3s ease 0s;
+         @media (max-width: 1520px) {
+            font-size: 20px;
+            line-height: 23px;
+         }
+         @media (max-width: 1023.98px) {
+            font-size: 18px;
+            line-height: 21px;
+         }
+         @media (max-width: 420px) {
+            font-size: 16px;
+            line-height: 19px;
+         }
+      }
+      h5 {
+         white-space: nowrap;
+         margin-top: 10px;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: 200;
+         font-size: 18px;
+         line-height: 21px;
+         color: #000000;
+         transition: color 0.3s ease 0s;
+         @media (max-width: 1520px) {
+            font-size: 16px;
+            line-height: 19px;
+         }
+      }
+   }
+}

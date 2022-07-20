@@ -1,0 +1,15 @@
+@@include('files/welcomeSlider.js', {})
+@@include('files/videoSlider.js', {})
+@@include('files/galleryCards.js', {})
+@@include('files/bookingToggle.js', {})
+@@include('files/createRipple.js', {})
+@@include('files/exploreCurtain.js', {})
+
+
+@@include('files/functions.js', {})
+@@include('files/forms.js', {})
+@@include('files/header.js', {})
+@@include('files/video.js', {})
+@@include('files/map.js', {})
+@@include('files/gallary_hosting.js', {})
+@@include('files/buttonUp.js', {})

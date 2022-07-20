@@ -1,0 +1,278 @@
+.welcome-slider {
+   position: absolute;
+   width: 1000px;
+   height: 750px;
+   right: 0;
+   top: 0;
+   @media (max-width: 1400px) {
+      width: 700px;
+      height: 535px;
+   }
+   @media (max-width: 1023.98px) {
+      width: 100%;
+      height: 646px;
+      top: 215px;
+   }
+   @media (max-width: 767.98px) {
+      height: calc(365px + 281 * ((100vw - 420px) / (767.98 - 420)));
+      top: 179px;
+   }
+
+   &__wrapper {
+      height: 750px;
+      position: relative;
+      background: transparent;
+      @media (max-width: 1400px) {
+         height: 525px;
+      }
+      @media (max-width: 1023.98px) {
+         height: 546px;
+      }
+      @media (max-width: 767.98px) {
+         height: calc(285px + 261 * ((100vw - 420px) / (767.98 - 420)));
+      }
+   }
+
+   &__item {
+      // width: 1000px;
+      //height: 750px;
+      width: 100%;
+      height: 100%;
+
+      position: relative;
+      img {
+         width: 100%;
+         height: 50%;
+         object-fit: contain;
+      }
+      &::after {
+         content: "";
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         left: 0;
+         top: 0;
+         background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.5) 16.19%, rgba(0, 0, 0, 0) 30.73%);
+      }
+      @media (max-width: 1023.98px) {
+         &::after {
+            display: none;
+         }
+      }
+   }
+
+   &__block {
+      width: 600px;
+      height: 120px;
+      background-color: #030303;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      z-index: 50;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 75px 0px 74px;
+      @media (max-width: 1400px) {
+         width: 700px;
+         padding-left: 224px;
+      }
+      @media (max-width: 1023.98px) {
+         height: 100px;
+         width: 100%;
+         padding-left: 163px;
+         padding-right: 163px;
+      }
+
+      @media (max-width: 767.98px) {
+         width: 100%;
+         height: 80px;
+         padding-left: 30px;
+         padding-right: 30px;
+      }
+      @media (max-width: 520px) {
+         padding-left: 75px;
+         padding-right: 75px;
+      }
+      @media (max-width: 419px) {
+         padding-left: 25px;
+         padding-right: 25px;
+      }
+   }
+   &__buttons {
+      width: 80px;
+
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      z-index: 999;
+      @media (max-width: 767.98px) {
+         width: calc(55px + 25 * ((100vw - 420px) / (767.98 - 420)));
+         // margin-right: 10px;
+      }
+   }
+}
+.pagination {
+   color: #fff;
+   text-align: center;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 40px;
+   display: inline-block;
+   margin-top: 0px;
+   margin-left: 0px;
+   @media (max-width: 1024px) {
+      font-size: 20px;
+   }
+   @media (max-width: 1023.98px) {
+      font-size: 20px;
+   }
+   @media (max-width: 767.98px) {
+      font-size: 16px;
+      word-spacing: 0.01px;
+   }
+}
+
+.pagination-current {
+   margin-right: 10px;
+   @media (max-width: 420px) {
+      margin-right: 5px;
+   }
+}
+.pagination-total {
+   margin-left: 6px;
+   @media (max-width: 420px) {
+      margin-left: 3px;
+   }
+}
+
+.swiper-pagination {
+   font-size: 12px;
+
+   z-index: 100;
+
+   span {
+      display: inline-block;
+      margin-right: 25px;
+   }
+}
+.welcome-slider__block {
+   .swiper-pagination-bullet {
+      background: #fff;
+      opacity: 1;
+
+      transition: background 0.3s ease 0s;
+      @media (max-width: 767.98px) {
+         margin-right: 10px;
+      }
+      &:hover {
+         background: #9d8665;
+      }
+   }
+   .swiper-pagination-horizontal {
+      position: static;
+      margin-right: 3px;
+      @media (max-width: 1900px) {
+         margin-right: 0px;
+      }
+   }
+   .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+   .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      display: inline-block;
+      margin-right: 25px;
+      margin-left: 0;
+      z-index: 100;
+      &:last-child {
+         margin-right: 0px;
+      }
+      @media (max-width: 767.98px) {
+         margin-right: calc(10px + 15 * ((100vw - 420px) / (767.98 - 420)));
+         // margin-right: 10px;
+      }
+   }
+   .swiper-horizontal > .swiper-pagination-bullets,
+   .swiper-pagination-bullets.swiper-pagination-horizontal,
+   .swiper-pagination-custom,
+   .swiper-pagination-fraction {
+      position: static;
+      white-space: nowrap;
+      width: auto;
+   }
+   .swiper-pagination-bullet-active {
+      background: #d2b183;
+   }
+   .swiper-pagination-fraction {
+      display: inline-block;
+
+      width: 100%;
+   }
+   .swiper-button-prev {
+      position: relative;
+      top: 0;
+      left: 0;
+   }
+   .swiper-button-next {
+      position: relative;
+      top: 0;
+      left: 0;
+   }
+   .swiper-button-prev,
+   .swiper-button-next {
+      margin: 0px 0px 0px 0px;
+      background-color: transparent;
+      z-index: 100;
+      width: 30px;
+
+      &:hover svg {
+         color: rgba(157, 134, 101, 1);
+      }
+      svg {
+         color: #fff;
+         width: 30px;
+         height: 8px;
+         transition: color 0.3s ease 0s;
+         @media (max-width: 767.98px) {
+            width: calc(20px + 10 * ((100vw - 420px) / (767.98 - 420)));
+            // margin-right: calc(10px + 15 * ((100vw - 420px) / (767.98 - 420)));
+            // margin-right: 10px;
+         }
+      }
+      &::after {
+         content: "";
+         display: none;
+      }
+   }
+
+   .swiper-pagination-bullet {
+      width: 16px;
+      height: 16px;
+      border-radius: 0;
+      @media (max-width: 1024px) {
+         width: 12px;
+         height: 12px;
+      }
+      @media (max-width: 767.98px) {
+         width: calc(7px + 5 * ((100vw - 420px) / (767.98 - 420)));
+         height: calc(7px + 5 * ((100vw - 420px) / (767.98 - 420)));
+      }
+   }
+
+   .swiper {
+   }
+   .swiper-wrapper {
+   }
+   .welcome .swiper-slide {
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+   .swiper-pagination {
+   }
+   .swiper-button-prev {
+   }
+   .swiper-button-next {
+   }
+}
